@@ -193,15 +193,17 @@ a.btn-ghost:hover{background:rgba(255,255,255,.12)}
 .gallery img:hover{opacity:.85}
 
 .lightbox{
-  position:fixed;inset:0;z-index:200;background:rgba(10,16,12,.94);
+  position:fixed;inset:0;z-index:250;background:rgba(10,16,12,.94);
   display:flex;align-items:center;justify-content:center;padding:5vmin;
 }
 .lightbox img{max-width:100%;max-height:100%;border-radius:4px}
 .lb-close{
-  position:absolute;top:18px;right:24px;background:none;border:none;
-  color:#fff;font-size:2.4rem;cursor:pointer;line-height:1;
+  position:fixed;top:24px;right:28px;background:none;border:none;
+  color:#fff;font-size:2.6rem;cursor:pointer;line-height:1;z-index:251;
+  padding:8px;transition:transform .15s ease;
 }
-.lb-close:focus-visible{outline:2px solid var(--honey)}
+.lb-close:hover{transform:scale(1.15)}
+.lb-close:focus-visible{outline:2px solid var(--honey);outline-offset:2px}
 
 /* ---------- Contact ---------- */
 address{font-style:normal;margin:1.2rem 0;font-size:1.05rem}
